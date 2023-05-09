@@ -1,0 +1,17 @@
+Package: LineEditor
+Priority: Optional
+Section: Development
+Version: 2.77
+Licence: Non-free
+Maintainer: Phil Pemberton <no.email@invalid>
+Homepage: https://github.com/philpem/LineEditor
+Standards-Version: 0.6.0
+Components: Apps.Development.!LineEditor (Movable)
+Environment: arm
+Description: Better interactive command line editing
+ Provides extra functions to make working at the RISC OS command line more friendly.
+ For example:
+ - command line editing with cursor keys
+ - command history
+ - filename completion
+

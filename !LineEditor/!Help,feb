@@ -1,0 +1,2 @@
+Set LineEditor$Dir <Obey$Dir>
+Filer_Opendir <LineEditor$Dir>.Docs

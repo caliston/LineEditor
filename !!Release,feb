@@ -4,15 +4,17 @@ CDir <Obey$Dir>.Release
 CDir <Obey$Dir>.Release.Apps
 CDir <Obey$Dir>.Release.Apps.Development
 Set LEInstall$Dir <Obey$Dir>.Release.Apps.Development.!LineEditor
-CDir <LEInstall$Dir>
+Copy <Obey$Dir>.!LineEditor ~CQ <LEInstall$Dir>
 CDir <LEInstall$Dir>.Docs
 Set LEDocs$Dir <LEInstall$Dir>.Docs
 
 Copy <Obey$Dir>.* <LEInstall$Dir>.Docs.* ~C~RQ
+Copy <Obey$Dir>.RiscPkg <LEInstall$Dir>.RiscPkg ~CQ
 
 Delete <LEDocs$Dir>.!!Release
 Delete <LEDocs$Dir>.KeyLib
 Delete <LEDocs$Dir>.README/md
+
 Rename <LEDocs$Dir>.LineEditor <LEInstall$Dir>.LineEditor
 Rename <LEDocs$Dir>.LESrc <LEInstall$Dir>.LESrc
 Rename <LEDocs$Dir>.DfltKeys <LEInstall$Dir>.DfltKeys

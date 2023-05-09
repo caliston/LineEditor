@@ -1,0 +1,7 @@
+Set LineEditor$Dir <Obey$Dir>
+RMEnsure LineEditor 2.77 RMLoad <LineEditor$Dir>.LineEditor
+Set CLI$Prompt <17><1>*
+Set LineEditor$Edit <17><2>
+Set LineEditor$List <17><3>
+Set LineEditor$Type <17><4>
+Set LineEditor$Output <17><5>

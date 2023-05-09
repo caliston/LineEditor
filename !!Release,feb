@@ -14,6 +14,7 @@ Copy <Obey$Dir>.RiscPkg <Obey$Dir>.Release.RiscPkg ~CRQ
 Delete <LEInstall$Dir>.!!Release
 Delete <LEInstall$Dir>.KeyLib
 Delete <LEInstall$Dir>.README/md
+Delete <LEInstall$Dir>./robuild/yml
 
 Rename <LEInstall$Dir>.!ReadMe <LEDocs$Dir>.!ReadMe
 Rename <LEInstall$Dir>.ConfigOpts <LEDocs$Dir>.ConfigOpts

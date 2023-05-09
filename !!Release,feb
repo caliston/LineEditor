@@ -8,18 +8,19 @@ Copy <Obey$Dir>.!LineEditor <LEInstall$Dir> ~CRQ
 CDir <LEInstall$Dir>.Docs
 Set LEDocs$Dir <LEInstall$Dir>.Docs
 
-Copy <Obey$Dir>.* <LEInstall$Dir>.Docs.* ~C~RQ
-Copy <Obey$Dir>.RiscPkg <LEInstall$Dir>.RiscPkg ~CRQ
+Copy <Obey$Dir>.* <LEInstall$Dir>.* ~C~RQ
+Copy <Obey$Dir>.RiscPkg <Obey$Dir>.Release.RiscPkg ~CRQ
 
-Delete <LEDocs$Dir>.!!Release
-Delete <LEDocs$Dir>.KeyLib
-Delete <LEDocs$Dir>.README/md
+Delete <LEInstall$Dir>.!!Release
+Delete <LEInstall$Dir>.KeyLib
+Delete <LEInstall$Dir>.README/md
 
-Rename <LEDocs$Dir>.LineEditor <LEInstall$Dir>.LineEditor
-Rename <LEDocs$Dir>.LESrc <LEInstall$Dir>.LESrc
-Rename <LEDocs$Dir>.DfltKeys <LEInstall$Dir>.DfltKeys
-Rename <LEDocs$Dir>.RebindKeys <LEInstall$Dir>.RebindKeys
-Rename <LEDocs$Dir>.Rebinder <LEInstall$Dir>.Rebinder
+Rename <LEInstall$Dir>.!ReadMe <LEDocs$Dir>.!ReadMe
+Rename <LEInstall$Dir>.ConfigOpts <LEDocs$Dir>.ConfigOpts
+Rename <LEInstall$Dir>.DeveloperNotes/md <LEDocs$Dir>.DeveloperNotes/md
+Rename <LEInstall$Dir>.SWIs <LEDocs$Dir>.SWIs
+Rename <LEInstall$Dir>.WhatsNew <LEDocs$Dir>.WhatsNew
+
 Copy <LEDocs$Dir>.!ReadMe <Obey$Dir>.Release ~C~RQ
 
 Echo Release successfully built.

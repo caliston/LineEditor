@@ -4,7 +4,7 @@ CDir <Obey$Dir>.Release
 CDir <Obey$Dir>.Release.Apps
 CDir <Obey$Dir>.Release.Apps.Development
 Set LEInstall$Dir <Obey$Dir>.Release.Apps.Development.!LineEditor
-Copy <Obey$Dir>.!LineEditor ~CQ <LEInstall$Dir>
+Copy <Obey$Dir>.!LineEditor <LEInstall$Dir> ~CQ
 CDir <LEInstall$Dir>.Docs
 Set LEDocs$Dir <LEInstall$Dir>.Docs
 
@@ -19,6 +19,7 @@ Rename <LEDocs$Dir>.LineEditor <LEInstall$Dir>.LineEditor
 Rename <LEDocs$Dir>.LESrc <LEInstall$Dir>.LESrc
 Rename <LEDocs$Dir>.DfltKeys <LEInstall$Dir>.DfltKeys
 Rename <LEDocs$Dir>.RebindKeys <LEInstall$Dir>.RebindKeys
+Rename <LEDocs$Dir>.Rebinder <LEInstall$Dir>.Rebinder
 Copy <LEDocs$Dir>.!ReadMe <Obey$Dir>.Release ~C~RQ
 
 Echo Release successfully built.
